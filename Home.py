@@ -60,7 +60,7 @@ with col2:
         helper.project_card(title="Transaction Data Processor Demo",
                             description="Processing Engine",
                             image="media/project_one_cover.png",
-                            link='<a href="?page=1_Plotting_Demo">')
+                            link="https://benmikus.streamlit.app/~/+/Transaction_Data_Processor")
 
 
 
