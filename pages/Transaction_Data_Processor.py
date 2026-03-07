@@ -124,14 +124,14 @@ with col2:
                  "_stores all sales recorded in a selected time period. The numeric columns are quite clean, hardly_ "
                  "_ever containing commas and such. The net values, however, aren't calculated in a way that agrees_ "
                  "_with accounting principles. Then, sales tax and other fees are missing_.")
-        df1 = pd.read_csv("data\Etsy_Order_Summary.csv")
+        df1 = pd.read_csv("data/Etsy_Order_Summary.csv")
         st.dataframe(df1, hide_index=True)
     with tab2:
         st.write("_The second dataset of interest covers all transactions affecting a business's deposit account_. "
                  "_It is here that the missing fees can be found, as well as information on non-order-related_ "
                  "_transactions, such as withdrawals and marketing fees. Because the data reads like a bank_ "
                  "_statement, numeric fields are riddled with non-numeric values and even stored within strings._")
-        df2 = pd.read_csv("data\Etsy_Monthly_Statement.csv")
+        df2 = pd.read_csv("data/Etsy_Monthly_Statement.csv")
         st.dataframe(df2, hide_index=True)
     st.space()
 
