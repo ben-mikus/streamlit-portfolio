@@ -17,20 +17,20 @@ with col2:
     col1, col2, col3 = st.columns([0.15, 0.22, 0.73])
     with col1:
         st.image(
-            "media\GitHub-Logo.png",
+            "media/GitHub-Logo.png",
             width=30,
             link="https://github.com/ben-mikus"
         )
     with col2:
         st.image(
-            "media\Linkedin-Logo.png",
+            "media/Linkedin-Logo.png",
             width=55,
             link="https://www.linkedin.com/in/benmikus/"
         )
 
 ### Right-aligned: profile picture
 with col5:
-    st.image("media\Profile.jpg", width=190)
+    st.image("media/Profile.jpg", width=190)
 
 ### ABOUT SECTION
 col1, col2, col3, col4 = st.columns([2, 9, 0.25, 2], border=False)
@@ -59,7 +59,7 @@ with col2:
     with col1:
         helper.project_card(title="Transaction Data Processor Demo",
                             description="Processing Engine",
-                            image="media\project_one_cover.png",
+                            image="media/project_one_cover.png",
                             link='<a href="?page=1_Plotting_Demo">')
 
 
