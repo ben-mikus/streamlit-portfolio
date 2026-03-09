@@ -7,33 +7,29 @@ import helper
 st.set_page_config("Ben Mikus", layout="wide")
 
 ### HERO SECTION
-col1, col2, col3, col4, col5, col6 = st.columns([2, 3, 3, 1.25, 1.7, 2], border=False)
+col1, col2, col3, col4 = st.columns([2, 7.05, 1.95, 2], border=False)
 ### Left-aligned: Name, Title, Links
 with col2:
     st.title("Ben Mikus")
     st.markdown("<p style='font-size:22px;'>Data Developer</p>", unsafe_allow_html=True)
     st.space()
-
-    col1, col2, col3 = st.columns([0.15, 0.22, 0.73])
-    with col1:
-        st.image(
-            "media/GitHub-Logo.png",
-            width=30,
-            link="https://github.com/ben-mikus"
-        )
-    with col2:
-        st.image(
-            "media/Linkedin-Logo.png",
-            width=55,
-            link="https://www.linkedin.com/in/benmikus/"
-        )
+    st.markdown("""
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="https://github.com/ben-mikus" target="_blank" style="text-decoration:none;">
+                <span style="background:#ddd6fe; padding:3px 5px; border-radius:6px;font-size:14px;">GitHub</span>
+            <a>
+            <a href="https://linkedin.com/in/benmikus" target="_blank" style="text-decoration:none;">
+                <span style="background:#bfdbfe; padding:3px 5px; border-radius:6px;font-size:14px;">LinkedIn</span>
+            <a>
+        </div>
+        """, unsafe_allow_html=True)
 
 ### Right-aligned: profile picture
-with col5:
+with col3:
     st.image("media/Profile.jpg", width=190)
 
 ### ABOUT SECTION
-col1, col2, col3, col4 = st.columns([2, 9, 0.25, 2], border=False)
+col1, col2, col3 = st.columns([2, 9, 2], border=False)
 
 with col2:
     st.divider()
