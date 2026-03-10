@@ -7,12 +7,11 @@ import helper
 st.set_page_config("Ben Mikus", layout="wide")
 
 ### HERO SECTION
-col1, col2, col3, col4 = st.columns([2, 7.05, 1.95, 2], border=False)
+col1, col2, col3, col4 = st.columns([2, 7.5, 1.5, 2], border=False)
 ### Left-aligned: Name, Title, Links
 with col2:
     st.title("Ben Mikus")
-    st.markdown("<p style='font-size:22px;'>Data Developer</p>", unsafe_allow_html=True)
-    st.space()
+    st.markdown("<p style='font-size:22px;'>Data Science Graduate Student</p>", unsafe_allow_html=True)
     st.markdown("""
         <div style="display:flex; gap:10px; flex-wrap:wrap;">
             <a href="https://github.com/ben-mikus" target="_blank" style="text-decoration:none;">
@@ -28,24 +27,16 @@ with col2:
 with col3:
     st.image("media/Profile.jpg", width=190)
 
-### ABOUT SECTION
-col1, col2, col3 = st.columns([2, 9, 2], border=False)
-
-with col2:
-    st.divider()
-    st.space("small")
-    st.markdown("Data Developer and Data Science graduate student. Working at the intersection of data, "
-     "systems, and decision-making, I enjoy structuring raw data into meaningful forms. From cleaning and preprocessing "
-     "to building data workflows, I see strong data foundations as the basis for reliable analysis. Furthermore, I take "
-     "pride in translating numbers into insights that support decision-making and research, and I enjoy building visual "
-     "tools that make complex patterns understandable and explorable.", text_alignment="justify")
-    st.space("xxsmall")
-    st.divider()
-
 ### PROJECTS SECTION
+
 col1, col2, col3 = st.columns([2, 9, 2], border=False)
 
 with col2:
+
+    st.space()
+    st.divider()
+    st.space()
+
     st.subheader("My Projects")
     "Chek out some of my recent work."
     st.space()

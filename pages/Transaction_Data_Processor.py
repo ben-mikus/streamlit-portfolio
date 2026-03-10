@@ -138,9 +138,10 @@ with col2:
     ### Broad application of skills
     helper.header("So What?")
     st.write("While this data tool was designed to solve a very specific problem, the underlying approach is broadly "
-             "applicable. This project makes use of pre-processing methods that are applied to almost all real-world "
-             "analyses. It demonstrates how data systems can be designed to address even highly specific business "
-             "challenges. And, it shows how valuable a deep understanding of data is when tackling building workflows.")
+             "applicable. This project makes use of pre-processing methods that are applied to in many real-world "
+             "analyses and engineering processes. It demonstrates how data systems can be designed to address even "
+             "highly specific business challenges. And, it demonstrates the value of being able to look at the data "
+             "from a business perspective when building workflows.")
     st.space()
 
     ### Reflection
