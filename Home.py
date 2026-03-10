@@ -2,7 +2,7 @@
 ### The home page of my streamlit website as well as the main file from which it's deployed
 
 import streamlit as st
-import helper
+from utils import helper
 
 st.set_page_config("Ben Mikus", layout="wide")
 

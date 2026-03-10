@@ -3,7 +3,8 @@
 
 import pandas as pd
 import streamlit as st
-import helper
+from utils import helper
+from processor_demo import processor
 
 st.set_page_config("Transaction Data Processor Demo", layout="wide")
 
@@ -42,15 +43,7 @@ with col2:
     helper.header("Live Demo")
     with st.container(border=True):
 
-        from project_one import processor
-
         helper.header("Journal Entry Generator")
-
-        ### Builds a session state to aid with UI
-        if "generated_journals" not in st.session_state:
-            st.session_state.generated_journals = []
-        if "next_journal_no" not in st.session_state:
-            st.session_state.next_journal_no = None
 
         ### Receive journal number input from user
         with st.container(border=True, width="stretch"):
@@ -96,10 +89,10 @@ with col2:
             st.download_button(
                 label=f"Download Journal Uploader",
                 data=csv,
-                file_name=f"january_journal_uploader.csv".replace(" ", "_"),
+                file_name="january_journal_uploader.csv".replace(" ", "_"),
                 mime="text/csv"
             )
-            st.write("Next Journal Number:", st.session_state.next_journal_no)
+            st.metric("Next Journal Number:", next_journal_no)
     st.space()
 
     ### Breakdown
@@ -156,4 +149,4 @@ with col2:
     ### Repository link
     helper.header("TL;DR, just give me the code!")
     st.write("To get a better understanding the interworkings of the program and see some of the decisions that I made "
-             "about the data, view the source code on my [GitHub](https://github.com/ben-mikus).")
+             "about the data, view the source code on my [GitHub](https://github.com/ben-mikus/transaction-processor-demo).")

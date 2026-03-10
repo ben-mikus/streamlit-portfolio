@@ -2,8 +2,8 @@
 ### Handles the transformation of transaction data from Etsy into journal entry format.
 
 import pandas as pd
-from project_one.dataframe import DataFrame
-from project_one import mapping
+from processor_demo.dataframe import DataFrame
+from processor_demo import mapping
 
 
 ### The transformation process is called through the run() function.
